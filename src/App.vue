@@ -1,19 +1,45 @@
 <script setup lang="ts">
+import {ref} from 'vue'
 import NavBar from './components/NavBar.vue'
-import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
+import TechVue from './Tech.vue';
+import spacer  from './components/spacer.vue';
+
+
 </script>
 
 <template>
-  <header>
-  <NavBar />
+
+	<NavBar />
+
+	<main class="scrollspy homeHeader" data-bs-spy="scroll" data-bt-target="#navbar" >
 
 
-  </header>
 
-  <main>
-	  <TheWelcome />
-  </main>
+
+
+		<TheWelcome  />
+		<spacer />
+		<TechVue />
+		<spacer />
+
+		<div class="d-md-flex">
+
+			<div class="col-md-4 col-12 flex-md  p-3 p-md-5 m-md-3 rounded
+				bg-light">
+				Main Point
+			</div>
+			<div class="col-md-4 col-12 flex-md p-3 p-md-5 m-md-3 rounded
+				bg-light">
+
+				Secondary Point
+			</div>
+			<div class="col-md-4 col-12 flex-md p-3 p-md-5 m-md-3 rounded
+				bg-light">
+				Tertiary point
+			</div>
+		</div>
+	</main>
 </template>
 
 <style></style>
