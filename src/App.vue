@@ -3,8 +3,10 @@ import {ref} from 'vue'
 import NavBar from './components/NavBar.vue'
 import TheWelcome from './components/TheWelcome.vue'
 import TechVue from './Tech.vue';
+import ScrollBarShowcase from './components/ScrollBarShowcase.vue';
 import spacer  from './components/spacer.vue';
 
+Vue.prototype.
 
 </script>
 
@@ -14,14 +16,11 @@ import spacer  from './components/spacer.vue';
 
 	<main class="scrollspy homeHeader" data-bs-spy="scroll" data-bt-target="#navbar" >
 
-
-
-
-
 		<TheWelcome  />
 		<spacer />
 		<TechVue />
 		<spacer />
+		<ScrollBarShowcase />
 
 		<div class="d-md-flex">
 

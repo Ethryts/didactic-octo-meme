@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import TechItemVue from './components/TechItem.vue';
+import IconVue from './components/icons/IconVue.vue';
+import IconBootStrap from './components/icons/IconBootstrap.vue';
 </script>
 
 <template>
@@ -14,9 +16,8 @@ import TechItemVue from './components/TechItem.vue';
 			<div class="col-md-4 ">
 				<TechItemVue>
 					<template v-slot:icon>
-					<i class="bi bi-bootstrap"></i>
+						<IconBootStrap/>
 					</template>
-
 					<template v-slot:text>
 						This website was built with The front end bootstrap 5 framwork
 					</template>
@@ -24,7 +25,7 @@ import TechItemVue from './components/TechItem.vue';
 
 				<TechItemVue>
 					<template v-slot:icon>
-						<i class="bi bi-chevron-down"></i>
+						<IconVue/>
 					</template>
 					<template v-slot:text>
 						The reactive framework Vue3

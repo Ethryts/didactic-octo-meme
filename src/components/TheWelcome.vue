@@ -7,7 +7,6 @@ let scrollPos
 onScroll()
 function onScroll(){
 	scrollPos = window.scrollY
-	console.log(scrollPos)
 	let circles: NodeListOf<HTMLElement> = document.querySelectorAll('.circle')
 	for(let circle of circles ){
 
