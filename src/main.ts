@@ -1,7 +1,8 @@
-import { createApp, warn } from 'vue'
-import 'bootstrap/scss/bootstrap.scss'
-import 'bootstrap-icons/font/bootstrap-icons.css'
- 
-import App from './App.vue'
+import { createApp, warn } from "vue";
+import "bootstrap/scss/bootstrap.scss";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
-createApp(App).mount('#app')
+import App from "./App.vue";
+
+
+createApp(App).mount("#app");
